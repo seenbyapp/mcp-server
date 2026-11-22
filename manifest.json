@@ -1,0 +1,42 @@
+{
+  "manifest_version": "0.3",
+  "name": "seenby",
+  "display_name": "Seenby",
+  "version": "1.0.0",
+  "description": "MCP connector for Seenby: AI visibility reports for ChatGPT, Perplexity, Gemini and Google AI answers, cited pages and answer history.",
+  "long_description": "Seenby asks ChatGPT, Perplexity, Gemini, Google AI Mode and Google AI Overviews the questions your buyers ask and records whether your brand is named, its position, the competitors named instead and the pages each answer cites. get_account and get_brand_report read your plan, tracked brands and the action list; get_question_history and list_cited_pages read answer history and cited pages; suggest_setup, create_brand and run_brand_now set up and run tracking within your plan's limits; check_website runs the free check.",
+  "author": {
+    "name": "Seenby",
+    "url": "https://seenbyapp.com"
+  },
+  "homepage": "https://seenbyapp.com/developers/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seenbyapp/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "privacy_policies": [
+    "https://seenbyapp.com/privacy/"
+  ],
+  "license": "MIT"
+}
