@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.seenbyapp/mcp-server",
+  "title": "AI search visibility by Seenby",
+  "description": "AI search visibility: track brand mentions in ChatGPT, Perplexity, Gemini and Google AI answers.",
+  "repository": {
+    "url": "https://github.com/seenbyapp/mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "seenby-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://seenbyapp.com/mcp"
+    }
+  ]
+}
